@@ -29,7 +29,7 @@ const apps = [
     },
     {
         id: "about-vivek",
-        title: "About Vivek",
+        title: "About Moiz",
         icon: './themes/Yaru/system/user-home.png',
         disabled: false,
         favourite: true,
@@ -98,7 +98,7 @@ const apps = [
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://github.com/vivek9patel",
+        url: "https://github.com/amoiz13",
         screen: () => {},
     },
     {
@@ -109,7 +109,7 @@ const apps = [
         favourite: false,
         desktop_shortcut: true,
         isExternalApp: true,
-        url: "https://www.vivek9patel.com/tars"
+        url: "https://www.amoiz13.com/tars"
     },
 ]
 
