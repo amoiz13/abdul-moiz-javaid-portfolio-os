@@ -101,16 +101,13 @@ const apps = [
         url: "https://github.com/amoiz13",
         screen: () => {},
     },
-    {
-        id: "tars",
-        title: "Ask Tars",
-        icon: './themes/Yaru/apps/tars.svg',
-        disabled: false,
-        favourite: false,
-        desktop_shortcut: true,
-        isExternalApp: true,
-        url: "https://www.amoiz13.com/tars"
-    },
+    // {
+//   id: "tars",
+//   title: "TARS",
+//   icon: "./themes/Yaru/apps/tars.svg",
+//   app: displayTars,
+// },
+
 ]
 
 export default apps;
