@@ -12,13 +12,97 @@ export class Terminal extends Component {
         this.prev_commands = [];
         this.commands_index = -1;
         this.child_directories = {
-            root: ["books", "projects", "personal-documents", "skills", "languages", "PDPU", "interests"],
-            PDPU: ["Sem-6"],
-            books: ["Eric-Jorgenson_The-Almanack-of-Naval-Ravikant.pdf", "Elon Musk: How the Billionaire CEO of SpaceX.pdf", "The $100 Startup_CHRIS_GUILLEBEAU.pdf", "The_Magic_of_Thinking_Big.pdf"],
-            skills: ["Front-end development", "React.js", "jQuery", "Flutter", "Express.js", "SQL", "Firebase"],
-            projects: ["amoiz13-personal-portfolio", "synonyms-list-react", "economist.com-unlocked", "Improve-Codeforces", "flutter-banking-app", "Meditech-Healthcare", "CPU-Scheduling-APP-React-Native"],
-            interests: ["Software Engineering", "Deep Learning", "Computer Vision"],
-            languages: ["Javascript", "C++", "Java", "Dart"],
+            root: [
+                "books",
+                "projects",
+                "personal-documents",
+                "skills",
+                "languages",
+                "GIKI",
+                "movies",
+                "interests"
+            ],
+
+            GIKI: ["Coursework", "FYP - CryptoEngine"],
+
+            books: [
+                "Elif Shafak - The Forty Rules of Love.pdf",
+                "Elif Shafak - 10 Minutes 38 Seconds in This Strange World.pdf",
+                "Shahab Nama - Qudrat Ullah Shahab.pdf",
+                "Dan Brown - Deception Point.pdf",
+                "Fyodor Dostoevsky - Crime and Punishment.pdf",
+                "John Green - The Fault in Our Stars.pdf",
+                "John Green - Looking for Alaska.pdf",
+                "George Orwell - 1984.pdf",
+                "F. Scott Fitzgerald - The Great Gatsby.pdf"
+            ],
+
+            skills: [
+                "UI/UX Design",
+                "Figma",
+                "Front-end Development",
+                "React.js",
+                "Next.js",
+                "JavaScript",
+                "Tailwind CSS",
+                "Node.js",
+                "Flutter",
+                "Python",
+                "SQL",
+                "Git"
+            ],
+
+            projects: [
+                "UbuntuOS Portfolio",
+                "CryptoEngine - Final Year Project",
+                "Tourbud",
+                "Restaurant Experience Platform",
+                "MAIRA - Media AI Reel Assistant",
+                "E-Commerce Data Pipeline",
+                "Various UI/UX Case Studies"
+            ],
+
+            interests: [
+                "UI/UX Design",
+                "Human-centered Design",
+                "Cinematic Storytelling",
+                "Deep Learning",
+                "Interactive Interfaces"
+            ],
+
+            languages: [
+                "JavaScript",
+                "Python",
+                "Dart",
+                "C++"
+            ],
+
+            movies: [
+                // Christopher Nolan
+                "Interstellar (2014)",
+                "Inception (2010)",
+                "The Dark Knight (2008)",
+                "Tenet (2020)",
+                "Dunkirk (2017)",
+                "The Prestige (2006)",
+                "Memento (2000)",
+
+                // Quentin Tarantino
+                "Pulp Fiction (1994)",
+                "Inglourious Basterds (2009)",
+                "Django Unchained (2012)",
+                "Kill Bill Vol. 1 (2003)",
+                "Kill Bill Vol. 2 (2004)",
+                "The Hateful Eight (2015)",
+                "Once Upon a Time in Hollywood (2019)",
+
+                // Guy Ritchie
+                "The Gentlemen (2019)",
+                "Snatch (2000)",
+                "Sherlock Holmes (2009)",
+                "Sherlock Holmes: A Game of Shadows (2011)",
+                "Operation Fortune (2023)"
+            ]
         };
         this.state = {
             terminal: [],
@@ -56,7 +140,7 @@ export class Terminal extends Component {
             <React.Fragment key={id}>
                 <div className="flex w-full h-5">
                     <div className="flex">
-                        <div className=" text-ubt-green">vivek@Dell</div>
+                        <div className=" text-ubt-green">moiz@ubuntu</div>
                         <div className="text-white mx-px font-medium">:</div>
                         <div className=" text-ubt-blue">{this.current_directory}</div>
                         <div className="text-white mx-px font-medium mr-1">$</div>
@@ -238,14 +322,16 @@ export class Terminal extends Component {
                 }
                 break;
             case "pwd":
-                let str = this.current_directory;
-                result = str.replace("~", "/home/vivek")
-                break;
+                {
+                    let str = this.current_directory;
+                    result = str.replace("~", "/home/moiz");
+                    break;
+                }
             case "code":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("vscode");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands:[ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about-vivek, todoist, trash, settings, sendmsg]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands:[ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about, todoist, trash, settings, sendmsg]";
                 }
                 break;
             case "echo":
@@ -255,56 +341,57 @@ export class Terminal extends Component {
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("spotify");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about-vivek, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "chrome":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("chrome");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about-vivek, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "todoist":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("todo-ist");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about-vivek, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "trash":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("trash");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about-vivek, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about, todoist, trash, settings, sendmsg ]";
                 }
                 break;
-            case "about-vivek":
+            case "about":
                 if (words[0] === "." || words.length === 0) {
+                    // keep the internal app id the same as your About app in apps.config.js
                     this.props.openApp("about-vivek");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about-vivek, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "terminal":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("terminal");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about-vivek, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "settings":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("settings");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about-vivek, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "sendmsg":
                 if (words[0] === "." || words.length === 0) {
                     this.props.openApp("gedit");
                 } else {
-                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about-vivek, todoist, trash, settings, sendmsg ]";
+                    result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about, todoist, trash, settings, sendmsg ]";
                 }
                 break;
             case "clear":
@@ -323,7 +410,7 @@ export class Terminal extends Component {
                 result = "<img class=' w-2/5' src='./images/memes/used-sudo-command.webp' />";
                 break;
             default:
-                result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about-vivek, todoist, trash, settings, sendmsg ]";
+                result = "Command '" + main + "' not found, or not yet implemented.<br>Available Commands: [ cd, ls, pwd, echo, clear, exit, mkdir, code, spotify, chrome, about, todoist, trash, settings, sendmsg ]";
         }
         document.getElementById(`row-result-${rowId}`).innerHTML = result;
         this.appendTerminalRow();
