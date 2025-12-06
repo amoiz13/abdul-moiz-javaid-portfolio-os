@@ -133,7 +133,7 @@ function About() {
   </u>{" "}
   and previously as a Machine Learning Intern at{" "}
   <u className="cursor-pointer">
-    <a href="https://mission-critical-communication.net" target="_blank" rel="noreferrer">Internee.pk</a>
+    <a href="https://mission-critical-communication.net" target="_blank" rel="noreferrer">Mission Critical Communication</a>
   </u>.
   I also have experience building AI-powered web applications. Now I’m actively seeking
   full-time frontend and full-stack engineering roles!
@@ -251,96 +251,134 @@ function Skills() {
 
 function Projects() {
     const project_list = [
-        {
-            name: "UbuntuOS Portfolio",
-            date: "Apr 2021",
-            link: "https://github.com/amoiz13/amoiz13.github.io",
-            description: [
-                "Personal portfolio website of theme Ubuntu 20.04, made using NEXT.js & tailwind CSS",
-            ],
-            domains: ["javascript", "next.js", "tailwindcss"]
-        },
-        {
-            name: "Chrome Extension React Bolierplate",
-            date: "Dec 2021",
-            link: "https://github.com/amoiz13/chrome-extension-react-boilerplate",
-            description: [
-                "A boilerplate code to build a chrome extension with react and webpack",
-            ],
-            domains: ["javascript", "chrome-extension"]
-        },
-        {
-            name: "CodeConnect",
-            date: "Nov 2021",
-            link: "https://github.com/amoiz13/CodeConnect-frontend",
-            description: [
-                "A multi-language pair-programming platform with the features of video meeting and whiteboard. Built with React.js, Tailwind CSS, Chakra UI, Express & Socket.io.",
-            ],
-            domains: ["javascript", "tailwindcss"]
-        },
-        {
-            name: "Ad Free Spotify",
-            date: "Jun 2021",
-            link: "https://github.com/amoiz13/ad-free-spotify",
-            description: [
-                "Chrome extension to automatically mute/unmute Spotify tab when Advertisement starts and ends!",
-            ],
-            domains: ["javascript", "chrome-extension"]
-        },
-        {
-            name: "economist.com Unlocked",
-            date: "Mar 2021",
-            link: "https://github.com/amoiz13/economist.com-unlocked",
-            description: [
-                "A chrome extension to read Paid Articles for Free & with no Ads, no subscription, no memberships!",
-            ],
-            domains: ["javascript", "chrome-extension"]
-        },
-        {
-            name: "Flutter banking app",
-            date: "Jan 2021",
-            link: "https://github.com/amoiz13/flutter-banking-app",
-            description: [
-                "A Flutter & Firebase project for creating transactions between different Users and displaying the history of transactions done by all.",
-            ],
-            domains: ["flutter", "firestore", "dart", "firebase auth"]
-        },
-        {
-            name: "CPU scheduling application",
-            date: "Dec 2020",
-            link: "https://github.com/amoiz13/CPU-Scheduling-APP-React-Native",
-            description: [
-                "React Native Application to visualize the CPU Scheduling algorithms with different Processes and Animations with gannt chart.",
-            ],
-            domains: ["react-native", "javascript"]
-        },
-        {
-            name: "Meditech Healthcare WebApp",
-            date: "Nov 2020",
-            link: "https://github.com/amoiz13/Meditech-Healthcare",
-            description: [
-                "Developed Web Application to predict and diagnose diseases from x-ray images.",
-            ],
-            domains: ["javascript", "html5", "sass", "firebase", "tensorflow"]
-        },
-        {
-            name: "Problem Recommendation System",
-            date: "Sep 2020",
-            link: "https://github.com/amoiz13/Improve-Codeforces",
-            description: [
-                "Django web application to suggest practice problems from the areas in which the user struggles to get pass in code-forces.",
-            ],
-            domains: ["django", "python", "codeforces-api", "javascript"]
-        },
-        {
-            name: "Cleanliness Automation",
-            date: "Dec 2019",
-            link: "https://github.com/amoiz13/CPU-Scheduling-APP-React-Native",
-            description: [
-                "Developed Web Applications to automate Garbage collection and extraction systems for SSIP hackathon",
-            ],
-        }
-    ];
+    {
+        name: "MAIRA – Media AI Reel Assistant",
+        date: "2024",
+        link: "https://github.com/amoiz13/M.A.I.R.A-Media-AI-Reel-Assistant",
+        description: [
+            "A fully automated AI system that generates viral faceless reels using Google Trends, Gemini AI, Coqui TTS, subtitle alignment, and FFmpeg. Packaged with Docker for one-click execution."
+        ],
+        domains: ["python", "docker", "ai", "automation", "ffmpeg"]
+    },
+    {
+        name: "Insight AI – Question Answering System",
+        date: "2024",
+        link: "https://github.com/amoiz13/Insight-AI-Powered-Document-Q-A-Tool",
+        description: [
+            "An intelligent Q&A engine that extracts answers from documents using semantic search, embeddings, and classical NLP pipelines."
+        ],
+        domains: ["python", "nlp", "ai", "information-retrieval"]
+    },
+    {
+        name: "E-Commerce Data Pipeline",
+        date: "2024",
+        link: "https://github.com/amoiz13/E-Commerce-Data-Pipeline",
+        description: [
+            "A scalable data pipeline for ingestion, cleaning and transformation of large retail datasets. Includes analytics-ready outputs for BI dashboards."
+        ],
+        domains: ["python", "pandas", "data-engineering"]
+    },
+    {
+        name: "UbuntuOS Portfolio",
+        date: "2025",
+        link: "https://github.com/amoiz13/abdul-moiz-javaid-portfolio-os",
+        description: [
+            "A fully interactive Ubuntu-inspired portfolio with draggable windows, terminal emulation, apps, animations and a unique OS-like UX."
+        ],
+        domains: ["javascript", "next.js", "react", "tailwindcss"]
+    },
+    {
+        name: "CryptoEngine – FYP",
+        date: "2024",
+        link: "https://github.com/amoiz13/Crypto-Engine",
+        description: [
+            "A crypto analytics & insights engine focused on clean UI, intuitive dashboards and data visualization for market comprehension."
+        ],
+        domains: ["javascript", "react", "python"]
+    },
+    {
+        name: "TourBud – Travel Planner Platform",
+        date: "2023",
+        link: "https://github.com/amoiz13/TourBud",
+        description: [
+            "A modern travel planner app enabling trip creation, itinerary handling, and location-based recommendations."
+        ],
+        domains: ["javascript", "react", "ui-ux"]
+    },
+    {
+        name: "Restaurant Experience Platform",
+        date: "2023",
+        link: "https://github.com/amoiz13/Restaurant-Experience-Platform",
+        description: [
+            "A digital restaurant experience concept featuring menu browsing, ordering flows, and a clean UI experience."
+        ],
+        domains: ["javascript", "react", "ui-ux"]
+    },
+    {
+        name: "Basic Cyber Programs",
+        date: "2022",
+        link: "https://github.com/amoiz13/Basic_Cyber_Programs",
+        description: [
+            "A collection of basic cybersecurity algorithms and utilities implemented for learning and demonstrations."
+        ],
+        domains: ["python", "cybersecurity"]
+    },
+    {
+        name: "apache_spark",
+        date: "2024",
+        link: "https://github.com/amoiz13/apache_spark",
+        description: [
+            "A set of practical Spark-based implementations for distributed processing assignments."
+        ],
+        domains: ["python", "big-data", "apache-spark"]
+    },
+    {
+        name: "Basic Cyber Programs",
+        date: "2024",
+        link: "https://github.com/amoiz13/Basic_Cyber_Programs",
+        description: [
+            "A collection of cybersecurity-related programs including Caesar cipher, password strength checker, and an image encryptor."
+        ],
+        domains: ["python", "cybersecurity"]
+    },
+    {
+        name: "Wikipedia Clone",
+        date: "2024",
+        link: "https://github.com/amoiz13/Wikipedia_Clone",
+        description: [
+            "A frontend clone of Wikipedia built in JavaScript to practice content layout, styling, and component breakdown."
+        ],
+        domains: ["javascript", "frontend"]
+    },
+    {
+        name: "Code Editor Online",
+        date: "2024",
+        link: "https://github.com/amoiz13/Code_Editor_Online",
+        description: [
+            "A simple online code editor built in React to run and preview code snippets in-browser."
+        ],
+        domains: ["javascript", "react"]
+    },
+    {
+        name: "Fashion Recommendation System",
+        date: "2024",
+        link: "https://github.com/amoiz13/Fashion-Recommendation-System",
+        description: [
+            "A clothing recommendation system using machine learning to match user preferences to fashion items."
+        ],
+        domains: ["python", "machine-learning"]
+    },
+    {
+        name: "Anti-Cheating Program",
+        date: "2024",
+        link: "https://github.com/amoiz13/Anti-Cheating-Program",
+        description: [
+            "A model designed to detect suspicious student behavior or cheating patterns based on submitted inputs."
+        ],
+        domains: ["python", "machine-learning"]
+    }
+];
+
 
     const tag_colors = {
         "javascript": "yellow-300",
@@ -358,58 +396,79 @@ function Projects() {
         "python": "green-200",
         "codeforces-api": "gray-300",
         "tailwindcss": "blue-300",
-        "next.js": "purple-600"
+        "next.js": "purple-600","big-data": "yellow-400",
+"apache-spark": "orange-500",
+"machine-learning": "green-400",
+"frontend": "blue-200"
+
     }
 
     return (
-        <>
-            <div className=" font-medium relative text-2xl mt-2 md:mt-4 mb-4">
-                Projects
-                <div className="absolute pt-px bg-white mt-px top-full w-full">
-                    <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
-                    <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
-                </div>
+    <>
+        <div className="font-medium relative text-2xl mt-2 md:mt-4 mb-4">
+            Projects
+            <div className="absolute pt-px bg-white mt-px top-full w-full">
+                <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 left-full"></div>
+                <div className="bg-white absolute rounded-full p-0.5 md:p-1 top-0 transform -translate-y-1/2 right-full"></div>
             </div>
-            <iframe src="https://github.com/sponsors/amoiz13/card" title="Sponsor amoiz13" className='my-4 w-5/6 md:w-3/4' ></iframe>
+        </div>
 
-            {
-                project_list.map((project, index) => {
-                    const projectNameFromLink = project.link.split('/')
-                    const projectName = projectNameFromLink[projectNameFromLink.length - 1]
-                    return (
-                        <a key={index} href={project.link} target="_blank" rel="noreferrer" className="flex w-full flex-col px-4">
-                            <div className="w-full py-1 px-2 my-2 border border-gray-50 border-opacity-10 rounded hover:bg-gray-50 hover:bg-opacity-5 cursor-pointer">
-                                <div className="flex flex-wrap justify-between items-center">
-                                    <div className='flex justify-center items-center'>
-                                        <div className=" text-base md:text-lg mr-2">{project.name.toLowerCase()}</div>
-                                        <iframe src={`https://ghbtns.com/github-btn.html?user=amoiz13&repo=${projectName}&type=star&count=true`} frameBorder="0" scrolling="0" width="150" height="20" title={project.name.toLowerCase()+"-star"}></iframe>
-                                    </div>
-                                    <div className="text-gray-300 font-light text-sm">{project.date}</div>
-                                </div>
-                                <ul className=" tracking-normal leading-tight text-sm font-light ml-4 mt-1">
-                                    {
-                                        project.description.map((desc, index) => {
-                                            return <li key={index} className="list-disc mt-1 text-gray-100">{desc}</li>;
-                                        })
-                                    }
-                                </ul>
-                                <div className="flex flex-wrap items-start justify-start text-xs py-2">
-                                    {
-                                        (project.domains ?
-                                            project.domains.map((domain, index) => {
-                                                return <span key={index} className={`px-1.5 py-0.5 w-max border border-${tag_colors[domain]} text-${tag_colors[domain]} m-1 rounded-full`}>{domain}</span>
-                                            })
+        {/* Removed sponsor card completely */}
 
-                                            : null)
-                                    }
+        {
+            project_list.map((project, index) => {
+                const projectNameFromLink = project.link.split('/');
+                const projectName = projectNameFromLink[projectNameFromLink.length - 1];
+
+                return (
+                    <a key={index} href={project.link} target="_blank" rel="noreferrer" className="flex w-full flex-col px-4">
+                        <div className="w-full py-1 px-2 my-2 border border-gray-50 border-opacity-10 rounded hover:bg-gray-50 hover:bg-opacity-5 cursor-pointer">
+
+                            <div className="flex flex-wrap justify-between items-center">
+                                <div className='flex justify-center items-center'>
+                                    <div className="text-base md:text-lg mr-2">{project.name.toLowerCase()}</div>
+
+                                    {/* GitHub stars button */}
+                                    <iframe
+                                        src={`https://ghbtns.com/github-btn.html?user=amoiz13&repo=${projectName}&type=star&count=true`}
+                                        frameBorder="0"
+                                        scrolling="0"
+                                        width="150"
+                                        height="20"
+                                        title={project.name.toLowerCase() + "-star"}
+                                    ></iframe>
                                 </div>
+
+                                <div className="text-gray-300 font-light text-sm">{project.date}</div>
                             </div>
-                        </a>
-                    )
-                })
-            }
-        </>
-    )
+
+                            <ul className="tracking-normal leading-tight text-sm font-light ml-4 mt-1">
+                                {project.description.map((desc, index) => (
+                                    <li key={index} className="list-disc mt-1 text-gray-100">{desc}</li>
+                                ))}
+                            </ul>
+
+                            <div className="flex flex-wrap items-start justify-start text-xs py-2">
+                                {
+                                    project.domains &&
+                                    project.domains.map((domain, index) => (
+                                        <span
+                                            key={index}
+                                            className={`px-1.5 py-0.5 w-max border border-${tag_colors[domain]} text-${tag_colors[domain]} m-1 rounded-full`}
+                                        >
+                                            {domain}
+                                        </span>
+                                    ))
+                                }
+                            </div>
+                        </div>
+                    </a>
+                )
+            })
+        }
+    </>
+)
+
 }
 function Resume() {
     return (
